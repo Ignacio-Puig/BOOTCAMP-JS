@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Mailing List Subscription</title>
+   <meta charset="utf-8">
+</head>
+<body>
+   <h1> FORMULARIO </h1>
+
+
+   <form id="mailinglist" action="/mailinglist.php" method="post" autocomplete="off">
+      <fieldset name="suscribe" style="width: 400px;">
+         <legend>Subscribe to our newsletter</legend>
+         <p>Get the latest news!</p>
+
+         <ol>
+            <li><label for="user">Name:</label>
+               <input type="text" name="user" id="user">
+            </li><br>
+            <li><label for="email">Email:</label>
+               <input type="email" name="email" id="email">
+            </li><br> 
+            <li><label for="pwd">Password:</label>
+               <input type="password" id="pwd" name="Pasword">
+            </li><br>
+            <li><label for="birthday">Birthday:</label>
+               <input type="date" id="birthday" name="Birthday">
+            </li><br>
+            <li>
+               <label for="homepage">Add your homepage:</label>
+               <input type="url" id="homepage" name="Homepage">
+            </li><br>
+            <li>
+               <label for="appt">Select a time:</label>
+               <input type="time" id="appt" name="appt"><br>
+            </li><br>
+            <li>
+               <label for="week">Select a week:</label>
+               <input type="week" id="week" name="week"><br>
+            </li><br>
+            <li>
+               <label for="edad">Edad (between 0 and 150):</label>
+               <input type="range" id="edad" name="edad" min="0" max="150" step="5">
+            </li><br>
+            <li>
+               <label for="phone">Enter your phone number:</label>
+               <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{9}-[0-9]{3}">
+            </li><br>
+            <li>
+               <label for="appt">Select a time to callings:</label>
+               <input type="time" id="appt" name="appt">
+            </li><br>
+            <li>
+               <label for="gsearch">Search Google:</label>
+               <input type="search" id="gsearch" name="gsearch">
+            </li><br>
+            <li>
+               <label for="myfile">Select a file:</label>
+               <input type="file" id="myfile" name="myfile">
+            </li><br>
+            <li>
+               Hidden: <input type="hidden" id="custId" name="custId" value="3487">
+            </li><br>
+         </ol>
+
+         <fieldset name="Elige tu favorito" style=" width:300px;">
+            <legend>Elige tu lenguaje favorito</legend>
+         <input type="radio" id="html" name="fav_language" value="HTML">
+         <label for="html">HTML</label><br>
+         <input type="radio" id="css" name="fav_language" value="CSS">
+         <label for="css">CSS</label><br>
+         <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+         <label for="javascript">JavaScript</label>
+         </fieldset><br>
+         
+         <fieldset name="Vehiculos" style="width: 300px;">
+            <legend>Indica que vehículos tienes</legend>
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+               <label for="vehicle1"> I have a bike</label><br>
+               <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+               <label for="vehicle2"> I have a car</label><br>
+               <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+               <label for="vehicle3"> I have a boat</label>
+         </fieldset><br>
+
+         <label for="favcolor">Select your favorite color:</label>
+         <input type="color" id="favcolor" name="favcolor"><br><br>
+
+         <input type="submit" value="Send">
+         <input type="reset" value="Reset">
+         <input type="button" onclick="alert('Hello World!')" value="Click Me!">
+      </fieldset>
+
+      
+
+   </form>
+   
+  
+</body>
+</html>
